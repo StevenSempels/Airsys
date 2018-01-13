@@ -1,0 +1,225 @@
+/* Links */
+img {
+  border: none;
+}
+
+/* Sliders & Carousels */
+.otw_portfolio_manager-slider,
+.otw_portfolio_manager-format-gallery {
+  position: relative;
+  overflow: hidden;
+}
+
+.otw_portfolio_manager-slider.with-border {
+  padding: 3px;
+  border: 1px solid #ebeaea;
+  background-color: #fff;
+}
+
+.otw_portfolio_manager-slider ul,
+.otw_portfolio_manager-format-gallery ul,
+.otw_portfolio_manager-slider ol,
+.otw_portfolio_manager-format-gallery ol { padding: 0 !important; margin: 0; list-style: none !important; }
+
+.otw_portfolio_manager-slider .slides,
+.otw_portfolio_manager-format-gallery .slides { overflow: hidden; width: 1000%; }
+
+.otw_portfolio_manager-slider .slides li,
+.otw_portfolio_manager-format-gallery .slides li { float: left; position: relative; }
+
+.otw_portfolio_manager-slider,
+.otw_portfolio_manager-slider .slides img,
+.otw_portfolio_manager-format-gallery,
+.otw_portfolio_manager-format-gallery .slides img { display: block; }
+
+/* Carousel */
+.otw_portfolio_manager-carousel {
+  
+}
+
+.otw_portfolio_manager-slider.otw_portfolio_manager-carousel .slides {
+  margin: 0;
+  padding: 0;
+}
+
+.otw_portfolio_manager-carousel .slides li {
+  margin: 0 20px 0 0;
+}
+
+.otw_portfolio_manager-carousel .otw_portfolio_manager-portfolio-media.otw_portfolio_manager-format-image {
+  margin-bottom: 0;
+}
+
+.otw_portfolio_manager-carousel .otw_portfolio_manager-portfolio-title,
+.otw_portfolio_manager-carousel .otw_portfolio_manager-portfolio-title a {
+  font-size: 17px;
+  line-height: normal;
+}
+
+/* Captions */
+.otw_portfolio_manager-flex-caption {
+  padding: 20px 25px;
+  width: 100%;
+
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.otw_portfolio_manager-flex-caption.with-bg {
+  background: rgb(0,0,0);
+  background: rgba(0,0,0, 0.7);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  color: #fff;
+}
+
+.otw_portfolio_manager-slider.caption-left .otw_portfolio_manager-flex-caption {
+  text-align: left !important;
+}
+
+.otw_portfolio_manager-slider.caption-center .otw_portfolio_manager-flex-caption {
+  text-align: center !important;
+}
+
+.otw_portfolio_manager-slider.caption-right .otw_portfolio_manager-flex-caption {
+  text-align: right !important;
+}
+
+.otw_portfolio_manager-caption-title,
+.otw_portfolio_manager-caption-title a {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+
+.otw_portfolio_manager-caption-title a {
+  display: inline-block;
+}
+
+.otw_portfolio_manager-flex-caption.with-bg .otw_portfolio_manager-caption-title,
+.otw_portfolio_manager-flex-caption.with-bg .otw_portfolio_manager-caption-title a {
+  color: #fff;
+}
+
+.otw_portfolio_manager-caption-title a:hover {
+  color: #888;
+}
+
+.otw_portfolio_manager-caption-title + .otw_portfolio_manager-caption-excpert {
+  margin: 10px 0 0;
+}
+
+.otw_portfolio_manager-caption-excpert,
+.otw_portfolio_manager-caption-excpert p {
+  margin: 0;
+  font-size: 13px;
+  color: #333;
+}
+
+.otw_portfolio_manager-flex-caption.with-bg .otw_portfolio_manager-caption-excpert {
+  color: #fff;
+}
+
+@media only screen and (min-width: 600px) {
+  .otw_portfolio_manager-flex-caption {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.otw_portfolio_manager-slider .flex-direction-nav,
+.otw_portfolio_manager-format-gallery .flex-direction-nav {
+  position: absolute; top: 50%; margin-top: -20px; left: 0; width: 100%;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  opacity: 0;
+  filter: alpha(0);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  height: 0;
+
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.ie8 .otw_portfolio_manager-slider .flex-direction-nav,
+.ie8 .otw_portfolio_manager-format-gallery .flex-direction-nav {
+  height: auto;
+}
+
+.otw_portfolio_manager-widget-carousel .otw_portfolio_manager-carousel .flex-direction-nav {
+  margin-top: -12px;
+}
+
+.otw_portfolio_manager-slider.with-border .flex-direction-nav {
+  padding: 0 3px !important;
+}
+
+.otw_portfolio_manager-slider:hover .flex-direction-nav,
+.otw_portfolio_manager-format-gallery:hover .flex-direction-nav { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; opacity: 1; }
+
+.otw_portfolio_manager-slider .flex-direction-nav a,
+.otw_portfolio_manager-format-gallery .flex-direction-nav a {
+  display: block; background-color: #000; background-position: center center;
+  background-repeat: no-repeat; width: 30px; height: 40px; line-height: 40px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)"; opacity: 0.3; outline: none; text-indent: -9999px;
+}
+
+.otw_portfolio_manager-slider .flex-direction-nav a:hover,
+.otw_portfolio_manager-format-gallery .flex-direction-nav a:hover { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; opacity: 0.5; }
+
+.otw_portfolio_manager-slider .flex-direction-nav .flex-next,
+.otw_portfolio_manager-format-gallery .flex-direction-nav .flex-next { float: right; background-image: url(../img/otw-slider/arrow-next.png); }
+
+.otw_portfolio_manager-slider .flex-direction-nav .flex-prev,
+.otw_portfolio_manager-format-gallery .flex-direction-nav .flex-prev { float: left; background-image: url(../img/otw-slider/arrow-prev.png); }
+
+.otw_portfolio_manager-widget-carousel .otw_portfolio_manager-carousel .flex-direction-nav a {
+  font-size: 14px;
+  color: #fff;
+  width: 14px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-indent: 0;
+  background-image: none !important;
+}
+
+.otw_portfolio_manager-slider .flex-control-nav,
+.otw_portfolio_manager-format-gallery .flex-control-nav { position: absolute; width: 100%; list-style: none; text-align: center; bottom: 5px; left: 0; }
+
+.otw_portfolio_manager-widget-carousel .otw_portfolio_manager-carousel .flex-control-nav {
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  opacity: 0;
+}
+
+.otw_portfolio_manager-widget-carousel .otw_portfolio_manager-carousel:hover .flex-control-nav {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  opacity: 1;
+}
+
+.otw_portfolio_manager-slider.has-caption .flex-control-nav,
+.otw_portfolio_manager-format-gallery.has-caption .flex-control-nav { bottom: -25px !important }
+
+.otw_portfolio_manager-slider.no-control-nav .flex-control-nav {
+  display: none !important;
+}
+
+.otw_portfolio_manager-slider .flex-control-nav li,
+.otw_portfolio_manager-format-gallery .flex-control-nav li { display: inline-block; margin-right: 5px; }
+
+.otw_portfolio_manager-slider .flex-control-nav li a,
+.otw_portfolio_manager-format-gallery .flex-control-nav li a { display: block; width: 10px; height: 10px; text-indent: -99999px; background: #000; overflow: hidden; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; opacity: 0.5; display: none;}
+
+.otw_portfolio_manager-slider .flex-control-nav li a:hover,
+.otw_portfolio_manager-slider .flex-control-nav li a.flex-active,
+.otw_portfolio_manager-format-gallery .flex-control-nav li a:hover,
+.otw_portfolio_manager-format-gallery .flex-control-nav li a.flex-active { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; opacity: 0.8; cursor: pointer; display: none; }
