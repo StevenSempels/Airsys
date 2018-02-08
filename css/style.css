@@ -376,7 +376,7 @@ img {
 	height: auto;
 	float: left;
 	display: inline-block;
-	margin-top: 28px;
+	margin-top: 18px;
 	margin-left: 50px;
 	}
 
@@ -508,7 +508,7 @@ ul.drop-down li a:hover {
 	
 #sidebar-header.small .logo {
 	width: 125px;
-	margin-top: 20px;
+	margin-top: 10px;
 	}
 	
 #sidebar-header.small .nav-fullscreen {
@@ -1503,11 +1503,13 @@ input[type="submit"]:hover {
 }
 
 .brands {
-	height: 200px
+	height: 100px;
+	float: left;
+	margin-right: 20px;
 }
 
 .brands .brand-item {
-	height: 200px; 
+	height: 100px; 
 	margin: auto;
 
 }
@@ -1525,12 +1527,19 @@ input[type="submit"]:hover {
 	border-top: 1px solid rgb(255, 156, 0);
 	border-bottom: 1px solid rgb(255, 156, 0);
 	padding: 10px 0;
+	white-space: nowrap;
+	height: 121px;
+	overflow: hidden;
 }
 
 .brands-slider .flex-direction-nav {
 	opacity: 1 !important;
 }
 
+#top {
+	height:100vh;
+	overflow: hidden;
+}
 @media screen and (max-width:1200px) {
 	.brands-slider .sidebar-slider-full-width {
 		margin-top: 0px;

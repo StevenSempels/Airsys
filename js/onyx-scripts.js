@@ -181,6 +181,7 @@ $('a[href*="#"]').click(function(e) {
     $('html, body').animate({
         scrollTop: $(target).offset().top
     }, 1000);
+    $("[for=op]:visible").eq(1).click()
 	return false;
 });
 
@@ -258,11 +259,11 @@ window.onload = function() {
 [Masonry]
 -------------------------------------------------------------------*/
 
-$(window).on('load', function () {
+// $(window).on('load', function () {
 
-    $('.masonry-container').masonry({
-        "itemSelector": ".item",
-        "columnWidth": ".grid-sizer",
-    });
+//     $('.masonry-container').masonry({
+//         "itemSelector": ".item",
+//         "columnWidth": ".grid-sizer",
+//     });
 
-});
+// });

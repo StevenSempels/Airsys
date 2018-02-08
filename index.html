@@ -31,11 +31,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
         
-    <!-- TURN JS AND DEPENDANCIES -->
+    <!-- MARQUEE AND DEPENDANCIES -->
     <script type="text/javascript" src="extras/jquery.min.1.7.js"></script>
     <script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
     <script type="text/javascript" src="lib/hash.js"></script>
-    <script type="text/javascript" src="lib/turn.min.js"></script>
+    <script type="text/javascript" src="js/marquee.js"></script>
     
     <!-- GOOGLE MAPS -->
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIQx8h0u0ledaBAwszTmF60lr_UeY-eWQ"></script> <!-- Replace '#' with your API key -->
@@ -105,11 +105,11 @@
                 <label for="op"></label>
                     <div id="nav">
                         <ul>
-                            <li><a href="#top">Home</a></li>
-                            <li><a href="#brands">Merken</a></li>
-                            <li><a href="#map">Locatie</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                            <li><a href="#details">Gegevens</a></li>
+                            <li><a data-scroll-target="#top" href="#">Home</a></li>
+                            <li><a data-scroll-target="#top" href="#">Merken</a></li>
+                            <li><a data-scroll-target="#map" href="#">Locatie</a></li>
+                            <li><a data-scroll-target="#contact" href="#">Contact</a></li>
+                            <li><a data-scroll-target="#details" href="#">Gegevens</a></li>
                         </ul>
                     </div>
                 </div>
@@ -208,88 +208,90 @@
     <div class="sidebar-content-wrap">
         
            <!-- SLIDER -->
-           <div class="row" style="margin-top: -221px">
+           <div class="row" style="margin-top: -121px; overflow: hidden">
                
-               <div class="otw_portfolio_manager-slider brands-slider" data-animation="slide">
-                                          
-                    <ul class="slides">
+               <!-- <div class="otw_portfolio_manager-slider brands-slider" data-animation="slide"> -->
+                <div id="marquee" class="brands-slider marquee">  
                         
-                        <!-- SLIDE 1 -->
-                        <li class="sidebar-slider-full-width brands">
-                            <div class="column-width-three brand-item">
-                                <img src="./img/brands/snickers.jpg">
-                            </div>
+                    <div class="sidebar-slider-full-width brands">
+                        <div class="brand-item">
+                            <img src="./img/brands/snickers.jpg">
+                        </div>
+                    </div>
+                    <div class="sidebar-slider-full-width brands">
+                        <div class="brand-item">
+                            <img src="./img/brands/cat.jpg">
+                        </div>
+                    </div>
+                    <div class="sidebar-slider-full-width brands">
+                        <div class="brand-item">
+                            <img src="./img/brands/projob.jpg">
+                        </div>
+                    </div>
 
-                            <div class="column-width-three brand-item">
-                                <img src="./img/brands/cat.jpg">
-                            </div>
-                            
-                            <div class="column-width-three brand-item">
-                                <img src="./img/brands/projob.jpg">
-                            </div>
-                        </li>
+                    <div class="sidebar-slider-full-width brands">
+                        <div class="brand-item">
+                            <img src="./img/brands/solid-gear.jpg">
+                        </div>
+                    </div>
+                    <div class="sidebar-slider-full-width brands">
+                        <div class="brand-item">
+                            <img src="./img/brands/herock.jpg">
+                        </div>
+                    </div>
+                    <div class="sidebar-slider-full-width brands">
+                        <div class="brand-item">
+                            <img src="./img/brands/cottover.jpg">
+                        </div>
+                    </div> 
+                    <div class="sidebar-slider-full-width brands">
+                        <div class="brand-item">
+                            <img src="./img/brands/dad.jpg">
+                        </div>
+                    </div>
+                    <div class="sidebar-slider-full-width brands">
+                        <div class="brand-item">
+                            <img src="./img/brands/james-harvest.jpg">
+                        </div>
+                    </div>
+                    <div class="sidebar-slider-full-width brands">
+                        <div class="brand-item">
+                            <img src="./img/brands/james-harvest-frost.jpg">
+                        </div>
+                    </div>
+                    <div class="sidebar-slider-full-width brands">
+                        <div class="brand-item">
+                            <img src="./img/brands/mac-one.jpg">
+                        </div>
+                    </div>
+                    <div class="sidebar-slider-full-width brands">
+                        <div class="brand-item">
+                            <img src="./img/brands/printer-active.jpg">
+                        </div>
+                    </div>
+                    <div class="sidebar-slider-full-width brands">
+                        <div class="brand-item">
+                            <img src="./img/brands/bcpro.jpg">
+                        </div>
+                    </div>
 
-                        <!-- SLIDE 2 -->
-                        <li class="sidebar-slider-full-width brands">
-                            <div class="column-width-three brand-item">
-                                <img src="./img/brands/solid-gear.jpg">
-                            </div>
+                    <div class="sidebar-slider-full-width brands">
+                        <div class="brand-item">
+                            <img src="./img/brands/gildan.jpg">
+                        </div>
+                    </div>
+                    <div class="sidebar-slider-full-width brands">
+                        <div class="brand-item">
+                            <img src="./img/brands/kariban.jpg">
+                        </div>
+                    </div>
+                    <div class="sidebar-slider-full-width brands">
+                        <div class="brand-item">
+                            <img src="./img/brands/russell.jpg">
+                        </div>
+                    </div>
 
-                            <div class="column-width-three brand-item">
-                                <img src="./img/brands/herock.jpg">
-                            </div>
-                            
-                            <div class="column-width-three brand-item">
-                                <img src="./img/brands/cottover.jpg">
-                            </div>
-                        </li>
-                        
-                        <!-- SLIDE 3 -->
-                        <li class="sidebar-slider-full-width brands">
-                            <div class="column-width-three brand-item">
-                                <img src="./img/brands/dad.jpg">
-                            </div>
-
-                            <div class="column-width-three brand-item">
-                                <img src="./img/brands/james-harvest.jpg">
-                            </div>
-                            
-                            <div class="column-width-three brand-item">
-                                <img src="./img/brands/james-harvest-frost.jpg">
-                            </div>
-                        </li>
-
-                        <!-- SLIDE 4 -->
-                        <li class="sidebar-slider-full-width brands">
-                            <div class="column-width-three brand-item">
-                                <img src="./img/brands/mac-one.jpg">
-                            </div>
-
-                            <div class="column-width-three brand-item">
-                                <img src="./img/brands/printer-active.jpg">
-                            </div>
-                            
-                            <div class="column-width-three brand-item">
-                                <img src="./img/brands/bcpro.jpg">
-                            </div>
-                        </li>
-
-                        <!-- SLIDE 5 -->
-                        <li class="sidebar-slider-full-width brands">
-                            <div class="column-width-three brand-item">
-                                <img src="./img/brands/gildan.jpg">
-                            </div>
-
-                            <div class="column-width-three brand-item">
-                                <img src="./img/brands/kariban.jpg">
-                            </div>
-                            
-                            <div class="column-width-three brand-item">
-                                <img src="./img/brands/russell.jpg">
-                            </div>
-                        </li>
-                    </ul>
-               </div>
+                </div>
            </div>
                    
        <!-- SIDEBAR CONTENT WRAP END -->
