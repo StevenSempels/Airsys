@@ -1540,6 +1540,10 @@ input[type="submit"]:hover {
 	height:100vh;
 	overflow: hidden;
 }
+
+.js-marquee {
+	margin-right: 0px !important;
+}
 @media screen and (max-width:1200px) {
 	.brands-slider .sidebar-slider-full-width {
 		margin-top: 0px;

@@ -17,6 +17,9 @@ p.resume);a.pauseOnHover&&b.bind("mouseenter mouseleave",p.toggle);n&&a.allowCss
 $(document).ready(function($){
     $('.marquee').marquee({
         speed: 10,
-        pauseOnHover: true
+        pauseOnHover: true,
+        startVisible: true,
+        delayBeforeStart: 4000,
+        duplicated: true
     });
 });
