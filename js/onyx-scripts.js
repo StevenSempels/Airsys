@@ -181,7 +181,7 @@ $('a[href*="#"]').click(function(e) {
     $('html, body').animate({
         scrollTop: $(target).offset().top
     }, 1000);
-    $("[for=op]:visible").eq(1).click()
+    if ($(e.target).attr("data-menu") !== "false") $("[for=op]:visible").eq(1).click();
 	return false;
 });
 

@@ -50,7 +50,8 @@
 			var mapOptions = {
 				// How zoomed in you want the map to start at (always required)
 				zoom: 11,
-				scrollwheel: false,
+                scrollwheel: false,
+                gestureHandling: 'cooperative',
 
 				// The latitude and longitude to center the map (always required)
 				center: new google.maps.LatLng(50.8461003, 4.823820699999942), // New York
@@ -169,15 +170,14 @@
         <div class="row" id="top">
             
             <div class="otw_portfolio_manager-slider" data-animation="slide">
-                
                 <ul class="slides">
                     
                     <!-- SLIDE 1 -->
-                    <li class="sidebar-slider-full-width" style="background: url(img/otw-slider/creative/project-1/slide-1.jpg) no-repeat center; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;">
+                    <li class="sidebar-slider-full-width slide-1">
 
                         
-                        <div class="slider-caption" style="top: 10%">
-                            <p class="slider-white" style="margin-bottom: 25px; background-color:#111111; font-size: 35px">Werkkledij, bedrukking en borduren op alle textiel, 
+                        <div class="slider-caption">
+                            <p class="slider-white">Werkkledij, bedrukking en borduren op alle textiel, 
                                 <span class="txt-rotate" data-period="6000" data-rotate='[ "beschermingsmateriaal" ]'></span>
                             </p>
                             <!-- <a class="button-underline-white" href="#" data-scroll-target="#work" style="background-color:#111111; width: 200px; opacity: 0.7">Bekijk onze catalogi</a> -->
@@ -187,12 +187,12 @@
                             
                     </li>
                     <!-- SLIDE 2 -->
-                    <li class="sidebar-slider-full-width" style="background: url(img/otw-slider/creative/project-1/slide-2.jpg) no-repeat center; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;">
+                    <li class="sidebar-slider-full-width slide-2">
                         
 
-                        <div class="slider-caption" style="top: 10%">
-                            <p class="slider-white" style="margin-bottom: 25px; background-color:#111111; font-size: 35px">Airsys Workwear, we helpen je graag verder met het uitzoeken 
-                                <span class="txt-rotate" data-period="4000" data-rotate='[ "voor de juiste werkkledij" ]'></span>
+                        <div class="slider-caption">
+                            <p class="slider-white">Airsys Workwear, we helpen je graag verder met het uitzoeken 
+                                <span class="txt-rotate" data-period="6000" data-rotate='[ "voor de juiste werkkledij" ]'></span>
                             </p>
                             <!-- <a class="button-underline-white" href="#" data-scroll-target="#work" style="background-color:#111111; width: 200px">Bekijk onze catalogi</a> -->
                         </div>
@@ -207,10 +207,11 @@
     <!-- SIDEBAR CONTENT WRAP -->
     <div class="sidebar-content-wrap">
         
+
            <!-- SLIDER -->
            <div class="row" style="margin-top: -121px; overflow: hidden">
-               
-               <!-- <div class="otw_portfolio_manager-slider brands-slider" data-animation="slide"> -->
+                <a class="btn-contact" data-scroll-target="#contact" data-menu="false" href="#">Contacteer ons</a>
+                <!-- <div class="otw_portfolio_manager-slider brands-slider" data-animation="slide"> -->
                 <div id="marquee" class="brands-slider marquee" style="width: 100%">  
                         
                     <div class="sidebar-slider-full-width brands">
