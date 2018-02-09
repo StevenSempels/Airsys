@@ -15,11 +15,13 @@ h+"px"});b.trigger("beforeStarting");if(n){c.css(B,d);var l=r+" { 100%  "+F(t)+"
 p.resume);a.pauseOnHover&&b.bind("mouseenter mouseleave",p.toggle);n&&a.allowCss3Support?w():b.timer=setTimeout(w,a.delayBeforeStart)}})};f.fn.marquee.defaults={allowCss3Support:!0,css3easing:"linear",easing:"linear",delayBeforeStart:1E3,direction:"left",duplicated:!1,duration:5E3,gap:20,pauseOnCycle:!1,pauseOnHover:!1,startVisible:!1}})(jQuery);
 
 $(document).ready(function($){
-    $('.marquee').marquee({
-        speed: 10,
-        pauseOnHover: true,
-        startVisible: true,
-        delayBeforeStart: 4000,
-        duplicated: true
+    $(window).load(function(marquee){
+        $('.marquee').marquee({
+            speed: 10,
+            pauseOnHover: true,
+            startVisible: true,
+            delayBeforeStart: 4000,
+            duplicated: true
+        });
     });
 });
