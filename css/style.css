@@ -1196,7 +1196,7 @@ html {
 	-webkit-appearance: none;
 	}
 	
-.submit-button {
+.submit-button, .btn-contact {
 	font-family: 'Montserrat-Regular';
 	font-size: 1em;
 	font-weight: normal;
@@ -1243,7 +1243,7 @@ input[type=text]:focus, textarea:focus {
 	-o-transition: all .3s;
 	}
 	
-input[type="submit"]:hover {
+input[type="submit"]:hover, .btn-contact:hover {
 	color: #fff;
 	background-color: #111111;
 	cursor: pointer;
@@ -1253,6 +1253,7 @@ input[type="submit"]:hover {
 	-moz-transition: all .3s;
 	-ms-transition: all .3s;
 	-o-transition: all .3s;
+	border: 1px solid rgb(255, 156, 0);
 	}
 
 
@@ -1599,9 +1600,10 @@ input[type="submit"]:hover {
 }
 .btn-contact {
 	position: absolute;
-	margin-top: -50px;
+	margin-top: -95px;
 	left: 10px;
 	z-index: 98;
+	background-color: rgba(200,200,200,0.5);
 }
 
 @media screen and (max-width:1200px) {
@@ -1641,7 +1643,7 @@ input[type="submit"]:hover {
 	}
 }
 
-.btn-contact {
+/* .btn-contact {
   background: #ff9d00;
   background-image: -webkit-linear-gradient(top, #ff9d00, #9e5f00);
   background-image: -moz-linear-gradient(top, #ff9d00, #9e5f00);
@@ -1665,5 +1667,5 @@ input[type="submit"]:hover {
 .btn-contact:hover {
   background: #646464;
   text-decoration: none;
-}
+} */
 
