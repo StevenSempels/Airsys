@@ -6,151 +6,189 @@
 
 <head>
 
-	<!-- TITLE -->
+    <!-- TITLE -->
     <title>Airsys</title>
-  
-	<!-- META -->
-	<meta name="description" content=""/>
-	<meta name="keywords" content=""/>
-	<meta name="author" content="Incondite Media"/>
-	
-	<!-- FAV ICON -->
-	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
-    
+
+    <!-- META -->
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Incondite Media" />
+
+    <!-- FAV ICON -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
     <!-- BEHAVIORAL META -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	
-	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="css/overlay-menu.css"/>
-    <link rel="stylesheet" type="text/css" href="css/default.css"/>
-    <link rel="stylesheet" type="text/css" href="css/otw-grid.css"/>
-    <link rel="stylesheet" type="text/css" href="css/otw-portfolio-manager.css"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/overlay-menu.css" />
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/otw-grid.css" />
+    <link rel="stylesheet" type="text/css" href="css/otw-portfolio-manager.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-        
+
+
     <!-- MARQUEE AND DEPENDANCIES -->
     <script type="text/javascript" src="extras/jquery.min.1.7.js"></script>
     <script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
     <script type="text/javascript" src="lib/hash.js"></script>
     <script type="text/javascript" src="js/marquee.js"></script>
-    
+
     <!-- GOOGLE MAPS -->
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIQx8h0u0ledaBAwszTmF60lr_UeY-eWQ"></script> <!-- Replace '#' with your API key -->
-	<script type="text/javascript">
-	
-		// When the window has finished loading create our google map below
-		google.maps.event.addDomListener(window, 'load', init);
-	
-		function init() {
-			// Basic options for a simple Google Map
-			// For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-			var mapOptions = {
-				// How zoomed in you want the map to start at (always required)
-				zoom: 11,
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIQx8h0u0ledaBAwszTmF60lr_UeY-eWQ"></script>
+    <!-- Replace '#' with your API key -->
+    <script type="text/javascript">
+
+        // When the window has finished loading create our google map below
+        google.maps.event.addDomListener(window, 'load', init);
+
+        function init() {
+            // Basic options for a simple Google Map
+            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+            var mapOptions = {
+                // How zoomed in you want the map to start at (always required)
+                zoom: 11,
                 scrollwheel: false,
                 gestureHandling: 'cooperative',
 
-				// The latitude and longitude to center the map (always required)
-				center: new google.maps.LatLng(50.8461003, 4.823820699999942), // New York
+                // The latitude and longitude to center the map (always required)
+                center: new google.maps.LatLng(50.8461003, 4.823820699999942), // New York
 
-				// How you would like to style the map.
-				styles: [{"featureType":"all","elementType":"all","stylers":[{"hue":"#ff0000"},{"saturation":-100},{"lightness":-30}]},{"featureType":"all","elementType":"labels.text.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"color":"#353535"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#656565"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#505050"}]},{"featureType":"poi","elementType":"geometry.stroke","stylers":[{"color":"#808080"}]},{"featureType":"road","elementType":"geometry","stylers":[{"color":"#454545"}]}]
-                };
+                // How you would like to style the map.
+                styles: [{ "featureType": "all", "elementType": "all", "stylers": [{ "hue": "#ff0000" }, { "saturation": -100 }, { "lightness": -30 }] }, { "featureType": "all", "elementType": "labels.text.fill", "stylers": [{ "color": "#ffffff" }] }, { "featureType": "all", "elementType": "labels.text.stroke", "stylers": [{ "color": "#353535" }] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [{ "color": "#656565" }] }, { "featureType": "poi", "elementType": "geometry.fill", "stylers": [{ "color": "#505050" }] }, { "featureType": "poi", "elementType": "geometry.stroke", "stylers": [{ "color": "#808080" }] }, { "featureType": "road", "elementType": "geometry", "stylers": [{ "color": "#454545" }] }]
+            };
 
-			// Get the ID of the HTML DOM element that will contain your map 
-			var mapElement = document.getElementById('map');
-			// Create the Google Map using our element and options defined above
-			var map = new google.maps.Map(mapElement, mapOptions);
-		  
-		  	// MAP ICON
-			var icon = {
-				url: "img/icons/map/map-marker.png", // url
-				scaledSize: new google.maps.Size(75, 75), // scaled size
-			};
-			
-			var marker = new google.maps.Marker({
-				position: new google.maps.LatLng(50.8461003, 4.823820699999942), // New York,
-				map: map,
-				icon: icon
-			});
-		}
-			
-	</script>
-    
+            // Get the ID of the HTML DOM element that will contain your map 
+            var mapElement = document.getElementById('map');
+            // Create the Google Map using our element and options defined above
+            var map = new google.maps.Map(mapElement, mapOptions);
+
+            // MAP ICON
+            var icon = {
+                url: "img/icons/map/map-marker.png", // url
+                scaledSize: new google.maps.Size(75, 75), // scaled size
+            };
+
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(50.8461003, 4.823820699999942), // New York,
+                map: map,
+                icon: icon
+            });
+        }
+
+    </script>
+
 </head>
 
 <body>
-    
+
     <!-- SITE HEADER -->
     <div id="sidebar-header">
         <div class="container-header">
-            
+
             <!-- LOGO -->
             <div class="logo">
                 <img src="img/demo/logo.png">
                 <!-- <p class="logo-type">Airsys</p> -->
             </div>
-            
+
             <!-- MOBILE NAV -->
             <div class="nav-mobile">
                 <input type="checkbox" id="op">
                 <div class="lower">
-                	<label for="op">
-                        <img src="img/overlay-menu/menu-icon.png" alt="Menu" width="20"/>
+                    <label for="op">
+                        <img src="img/overlay-menu/menu-icon.png" alt="Menu" width="20" />
                     </label>
                 </div>
                 <div class="overlay overlay-hugeinc">
-                <label for="op"></label>
+                    <label for="op"></label>
                     <div id="nav">
                         <ul>
-                            <li><a data-scroll-target="#top" href="#">Home</a></li>
-                            <li><a data-scroll-target="#top" href="#">Merken</a></li>
-                            <li><a data-scroll-target="#map" href="#">Locatie</a></li>
-                            <li><a data-scroll-target="#contact" href="#">Contact</a></li>
-                            <li><a data-scroll-target="#details" href="#">Gegevens</a></li>
+                            <li>
+                                <a data-scroll-target="#top" href="#">Home</a>
+                            </li>
+                            <li>
+                                <a data-scroll-target="#top" href="#">Merken</a>
+                            </li>
+                            <li>
+                                <a data-scroll-target="#map" href="#">Locatie</a>
+                            </li>
+                            <li>
+                                <a data-scroll-target="#contact" href="#">Contact</a>
+                            </li>
+                            <li>
+                                <a data-scroll-target="#details" href="#">Gegevens</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            
+
         </div>
-	</div>
-    
+    </div>
+
     <!-- SIDEBAR MENU -->
     <div class="sidebar-navigation-menu">
-    	<div class="container-wide">
-        	<div class="row">
-                    <div class="sidebar-logo">
-                            <img src="img/demo/logo.png">
-                            
-                            <!-- <p class="logo-type">Airsys</p> -->
-                        </div>
+        <div class="container-wide">
+            <div class="row">
+                <div class="sidebar-logo">
+                    <img src="img/demo/logo.png">
+
+                    <!-- <p class="logo-type">Airsys</p> -->
+                </div>
                 <div class="sidebar-nav-fullscreen">
                     <ul>
                         <!--<li><h style="color:#FCB515; font-size: 25px">Werkkledij, bedrukking en borduren op alle textiel, beschermingsmateriaal</h2></li>-->
-                        <li><a>Leuvensesteenweg 445</a></li>
-                        <li><a>3370 Boutersem</a></li>
-                        <li><a><i class="fa fa-phone" aria-hidden="true"></i> : 016 89 31 50</a></li>
-                        <li><a><i class="fa fa-mobile-phone" aria-hidden="true" style="font-size:23px"></i> : 0475 62 62 29</a></li>
-                        <li><a href="mailto:ingrid@airsys.be"><i class="fa fa-envelope" aria-hidden="true"></i> : ingrid@airsys.be</a></li>
+                        <li>
+                            <a>Leuvensesteenweg 445</a>
+                        </li>
+                        <li>
+                            <a>3370 Boutersem</a>
+                        </li>
+                        <li>
+                            <a>
+                                <i class="fa fa-phone" aria-hidden="true"></i> : 016 89 31 50</a>
+                        </li>
+                        <li>
+                            <a>
+                                <i class="fa fa-mobile-phone" aria-hidden="true" style="font-size:23px"></i> : 0475 62 62 29</a>
+                        </li>
+                        <li>
+                            <a href="mailto:ingrid@airsys.be">
+                                <i class="fa fa-envelope" aria-hidden="true"></i> : ingrid@airsys.be</a>
+                        </li>
                     </ul>
                     <ul>
-                        <li><a></a></li>
-                        <li><a style="color:#FCB515; margin-top:50px">Openingsuren</a></li>
-                        <li><a>Ma - Vr: 09:00 - 18:00</a></li>
-                        <li><a>zaterdag: 10:00 - 16:00</a></li>
-                        <li><a>Zondag gesloten</a></li>
-                        <li><a></a></li>
-                        <li><a></a></li>
+                        <li>
+                            <a></a>
+                        </li>
+                        <li>
+                            <a style="color:#FCB515; margin-top:50px">Openingsuren</a>
+                        </li>
+                        <li>
+                            <a>Ma - Vr: 09:00 - 18:00</a>
+                        </li>
+                        <li>
+                            <a>zaterdag: 10:00 - 16:00</a>
+                        </li>
+                        <li>
+                            <a>Zondag gesloten</a>
+                        </li>
+                        <li>
+                            <a></a>
+                        </li>
+                        <li>
+                            <a></a>
+                        </li>
                     </ul>
                 </div>
 
                 <img src="img/shop/img_001.jpg">
                 <!-- NAV -->
-                 <!--<div class="sidebar-nav-fullscreen">
+                <!--<div class="sidebar-nav-fullscreen">
                     <ul>
                         <li><a href="#" data-scroll-target="#top">Home</a></li>
                         <li><a href="#" data-scroll-target="#services">Over ons</a></li>
@@ -158,40 +196,40 @@
                         <li><a href="#" data-scroll-target="#contact">Contact</a></li>
                     </ul>
                 </div> -->
-                
+
             </div>
         </div>
     </div>
-    
+
     <!-- SIDEBAR CONTENT WRAP -->
     <div class="sidebar-content-wrap">
-     
+
         <!-- SLIDER -->
         <div class="row" id="top">
-            
+
             <div class="otw_portfolio_manager-slider" data-animation="slide">
                 <ul class="slides">
-                    
+
                     <!-- SLIDE 1 -->
                     <li class="sidebar-slider-full-width slide-1">
 
-                        
+
                         <div class="slider-caption">
-                            <p class="slider-white">Werkkledij, bedrukking en borduren op alle textiel, 
+                            <p class="slider-white">Werkkledij, bedrukking en borduren op alle textiel,
                                 <span class="txt-rotate" data-period="6000" data-rotate='[ "beschermingsmateriaal" ]'></span>
                             </p>
                             <!-- <a class="button-underline-white" href="#" data-scroll-target="#work" style="background-color:#111111; width: 200px; opacity: 0.7">Bekijk onze catalogi</a> -->
-                        
+
                         </div>
 
-                            
+
                     </li>
                     <!-- SLIDE 2 -->
                     <li class="sidebar-slider-full-width slide-2">
-                        
+
 
                         <div class="slider-caption">
-                            <p class="slider-white">Airsys Workwear, we helpen je graag verder met het uitzoeken 
+                            <p class="slider-white">Airsys Workwear, we helpen je graag verder met het uitzoeken
                                 <span class="txt-rotate" data-period="6000" data-rotate='[ "voor de juiste werkkledij" ]'></span>
                             </p>
                             <!-- <a class="button-underline-white" href="#" data-scroll-target="#work" style="background-color:#111111; width: 200px">Bekijk onze catalogi</a> -->
@@ -200,103 +238,117 @@
                 </ul>
             </div>
         </div>
-                
-	<!-- SIDEBAR CONTENT WRAP END -->
+
+        <!-- SIDEBAR CONTENT WRAP END -->
     </div>
 
     <!-- SIDEBAR CONTENT WRAP -->
     <div class="sidebar-content-wrap">
-        
 
-           <!-- SLIDER -->
-           <div class="row" style="margin-top: -121px; overflow: hidden">
-                <a class="btn-contact" data-scroll-target="#contact" data-menu="false" href="#">Contacteer ons</a>
-                <!-- <div class="otw_portfolio_manager-slider brands-slider" data-animation="slide"> -->
-                <div id="marquee" class="brands-slider marquee" style="width: 100%">  
-                        
-                    <div class="sidebar-slider-full-width brands">
-                        <div class="brand-item">
+
+        <!-- SLIDER -->
+        <div class="row" style="margin-top: -121px; overflow: hidden">
+            <a class="btn-contact" data-scroll-target="#contact" data-menu="false" href="#">Contacteer ons</a>
+            <!-- <div class="otw_portfolio_manager-slider brands-slider" data-animation="slide"> -->
+            <div id="marquee" class="brands-slider marquee" style="width: 100%">
+
+                <div class="sidebar-slider-full-width brands">
+                    <div class="brand-item">
                             <img src="./img/brands/snickers.jpg">
-                        </div>
                     </div>
-                    <div class="sidebar-slider-full-width brands">
-                        <div class="brand-item">
-                            <img src="./img/brands/cat.jpg">
-                        </div>
-                    </div>
-                    <div class="sidebar-slider-full-width brands">
-                        <div class="brand-item">
-                            <img src="./img/brands/projob.jpg">
-                        </div>
-                    </div>
-
-                    <div class="sidebar-slider-full-width brands">
-                        <div class="brand-item">
-                            <img src="./img/brands/solid-gear.jpg">
-                        </div>
-                    </div>
-                    <div class="sidebar-slider-full-width brands">
-                        <div class="brand-item">
-                            <img src="./img/brands/herock.jpg">
-                        </div>
-                    </div>
-                    <div class="sidebar-slider-full-width brands">
-                        <div class="brand-item">
-                            <img src="./img/brands/cottover.jpg">
-                        </div>
-                    </div> 
-                    <div class="sidebar-slider-full-width brands">
-                        <div class="brand-item">
-                            <img src="./img/brands/dad.jpg">
-                        </div>
-                    </div>
-                    <div class="sidebar-slider-full-width brands">
-                        <div class="brand-item">
-                            <img src="./img/brands/james-harvest.jpg">
-                        </div>
-                    </div>
-                    <div class="sidebar-slider-full-width brands">
-                        <div class="brand-item">
-                            <img src="./img/brands/james-harvest-frost.jpg">
-                        </div>
-                    </div>
-                    <div class="sidebar-slider-full-width brands">
-                        <div class="brand-item">
-                            <img src="./img/brands/mac-one.jpg">
-                        </div>
-                    </div>
-                    <div class="sidebar-slider-full-width brands">
-                        <div class="brand-item">
-                            <img src="./img/brands/printer-active.jpg">
-                        </div>
-                    </div>
-                    <div class="sidebar-slider-full-width brands">
-                        <div class="brand-item">
-                            <img src="./img/brands/bcpro.jpg">
-                        </div>
-                    </div>
-
-                    <div class="sidebar-slider-full-width brands">
-                        <div class="brand-item">
-                            <img src="./img/brands/gildan.jpg">
-                        </div>
-                    </div>
-                    <div class="sidebar-slider-full-width brands">
-                        <div class="brand-item">
-                            <img src="./img/brands/kariban.jpg">
-                        </div>
-                    </div>
-                    <div class="sidebar-slider-full-width brands">
-                        <div class="brand-item">
-                            <img src="./img/brands/russell.jpg">
-                        </div>
-                    </div>
-
                 </div>
-           </div>
-                   
-       <!-- SIDEBAR CONTENT WRAP END -->
-       </div>
+                <div class="sidebar-slider-full-width brands">
+                    <div class="brand-item">
+                            <img src="./img/brands/cat.jpg">
+                    </div>
+                </div>
+                <div class="sidebar-slider-full-width brands">
+                    <div class="brand-item">
+                        <a target="_blank" href="https://joom.ag/KXcL">
+                            <img src="./img/brands/projob.jpg">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="sidebar-slider-full-width brands">
+                    <div class="brand-item">
+                            <img src="./img/brands/diadora.jpg">
+                    </div>
+                </div>
+                <div class="sidebar-slider-full-width brands">
+                    <div class="brand-item">
+                        <a target="_blank" href="https://issuu.com/herockhero/docs/herock_cataloog_2018_nl">
+                            <img src="./img/brands/herock.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="sidebar-slider-full-width brands">
+                    <div class="brand-item">
+                        <a target="_blank" href="https://joom.ag/PrGL">
+                            <img src="./img/brands/cottover.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="sidebar-slider-full-width brands">
+                    <div class="brand-item">
+                        <a target="_blank" href="https://joom.ag/NcJW">
+                            <img src="./img/brands/dad.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="sidebar-slider-full-width brands">
+                    <div class="brand-item">
+                        <a target="_blank" href="https://joom.ag/tpcL">
+                            <img src="./img/brands/james-harvest.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="sidebar-slider-full-width brands">
+                    <div class="brand-item">
+                        <a target="_blank" href="https://joom.ag/DZQY">
+                            <img src="./img/brands/james-harvest-frost.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="sidebar-slider-full-width brands">
+                    <div class="brand-item">
+                        <a target="_blank" href="https://joom.ag/lBVL">
+                            <img src="./img/brands/mac-one.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="sidebar-slider-full-width brands">
+                    <div class="brand-item">
+                            <img src="./img/brands/printer-active.jpg">
+                    </div>
+                </div>
+                <div class="sidebar-slider-full-width brands">
+                    <div class="brand-item">
+                            <img src="./img/brands/bcpro.jpg">
+                    </div>
+                </div>
+
+                <div class="sidebar-slider-full-width brands">
+                    <div class="brand-item">
+                            <img src="./img/brands/gildan.jpg">
+                    </div>
+                </div>
+                <div class="sidebar-slider-full-width brands">
+                    <div class="brand-item">
+                            <img src="./img/brands/kariban.jpg">
+                    </div>
+                </div>
+                <div class="sidebar-slider-full-width brands">
+                    <div class="brand-item">
+                            <img src="./img/brands/russell.jpg">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- SIDEBAR CONTENT WRAP END -->
+    </div>
 
     <!-- BRANDS SECTION -->
     <!-- <div class="row padding block" id="brands" style="background-color: #111111">
@@ -324,38 +376,38 @@
         <div class="container">
             <!-- COLUMN 1 -->
             <div class="" style="text-align: center; margin-bottom: 25px;">
-                    <!-- <li><img src="img/demo/logo.png"></li> -->
-                    <img src="img/shop/img_002.jpg">   
-                
+                <!-- <li><img src="img/demo/logo.png"></li> -->
+                <img src="img/shop/img_002.jpg">
+
                 <!-- <p class="logo-type" style="margin-top: -11px;">Airsys</p> -->
             </div>
             <!-- COLUMN 2 -->
             <div class="column-width-four" style="text-align: center;">
                 <p class="sub-title-white" style="margin-bottom: 25px;">Bedrijfskleding</p>
                 <ul>
-                        <!--<li><h style="color:#FCB515; font-size: 25px">Werkkledij, bedrukking en borduren op alle textiel, beschermingsmateriaal</h2></li>-->
-                        <li style="color: #ccc;">Projob</li>
-                        <li style="color: #ccc;">Snickers</li>
-                        <li style="color: #ccc;">Harvest</li>
-                        <li style="color: #ccc;">Printer</li>
-                        <li style="color: #ccc;">D.A.D</li>
-                        <li style="color: #ccc;">Cottover</li>
-                        <li style="color: #ccc;">Herock</li>
-                        <li style="color: #ccc;">B&amp;C</li>
-                        <li style="color: #ccc;">Gildan</li>
-                    </ul>
+                    <!--<li><h style="color:#FCB515; font-size: 25px">Werkkledij, bedrukking en borduren op alle textiel, beschermingsmateriaal</h2></li>-->
+                    <li style="color: #ccc;">Projob</li>
+                    <li style="color: #ccc;">Snickers</li>
+                    <li style="color: #ccc;">Harvest</li>
+                    <li style="color: #ccc;">Printer</li>
+                    <li style="color: #ccc;">D.A.D</li>
+                    <li style="color: #ccc;">Cottover</li>
+                    <li style="color: #ccc;">Herock</li>
+                    <li style="color: #ccc;">B&amp;C</li>
+                    <li style="color: #ccc;">Gildan</li>
+                </ul>
             </div>
             <!-- COLUMN 3 -->
             <div class="column-width-four" style="text-align: center;">
                 <p class="sub-title-white" style="margin-bottom: 25px;">Bescherming</p>
                 <ul>
-                        <li style="color: #ccc;">Earcaps</li>
-                        <li style="color: #ccc;">Maskers</li>
-                        <li style="color: #ccc;">Helmen</li>
-                        <li style="color: #ccc;">Veiligheidsbrillen</li>
-                        <li style="color: #ccc;">Valbescherming</li>
+                    <li style="color: #ccc;">Earcaps</li>
+                    <li style="color: #ccc;">Maskers</li>
+                    <li style="color: #ccc;">Helmen</li>
+                    <li style="color: #ccc;">Veiligheidsbrillen</li>
+                    <li style="color: #ccc;">Valbescherming</li>
 
-                    </ul>
+                </ul>
             </div>
 
             <!-- COLUMN 4 -->
@@ -384,7 +436,7 @@
                 </ul>
             </div>
 
-            
+
         </div>
     </div>
 
@@ -395,40 +447,53 @@
             <div class="column-width-four" style="text-align: center;">
                 <ul>
                     <!-- <li><img src="img/demo/logo.png"></li> -->
-                    <li><img src="img/shop/img_001.jpg"></li>    
-                </ul>    
-                
+                    <li>
+                        <img src="img/shop/img_001.jpg">
+                    </li>
+                </ul>
+
                 <!-- <p class="logo-type" style="margin-top: -11px;">Airsys</p> -->
             </div>
             <!-- COLUMN 2 -->
             <div class="column-width-four" style="text-align: center;">
                 <p class="sub-title-white" style="margin-bottom: 25px;">Contact</p>
                 <ul>
-                        <!--<li><h style="color:#FCB515; font-size: 25px">Werkkledij, bedrukking en borduren op alle textiel, beschermingsmateriaal</h2></li>-->
-                        <li style="color: #fff;"><i class="fa fa-phone" aria-hidden="true"></i> : 016 89 31 50</li>
-                        <li style="color: #fff;"><i class="fa fa-mobile-phone" aria-hidden="true" style="font-size:23px"></i> : 0475 62 62 29</li>
-                        <li><a style="color: #fff;" href="mailto:ingrid@airsys.be"><i class="fa fa-envelope" aria-hidden="true"></i> : ingrid@airsys.be</a></li>
-                    </ul>
+                    <!--<li><h style="color:#FCB515; font-size: 25px">Werkkledij, bedrukking en borduren op alle textiel, beschermingsmateriaal</h2></li>-->
+                    <li style="color: #fff;">
+                        <i class="fa fa-phone" aria-hidden="true"></i> : 016 89 31 50</li>
+                    <li style="color: #fff;">
+                        <i class="fa fa-mobile-phone" aria-hidden="true" style="font-size:23px"></i> : 0475 62 62 29</li>
+                    <li>
+                        <a style="color: #fff;" href="mailto:ingrid@airsys.be">
+                            <i class="fa fa-envelope" aria-hidden="true"></i> : ingrid@airsys.be</a>
+                    </li>
+                </ul>
             </div>
             <!-- COLUMN 3 -->
             <div class="column-width-four" style="text-align: center;">
                 <p class="sub-title-white" style="margin-bottom: 25px;">Openingsuren</p>
                 <ul>
-                        <li><a style="color: #fff;">Ma - Vr: 09:00 - 18:00</a></li>
-                        <li><a style="color: #fff;">zaterdag: 10:00 - 16:00</a></li>
-                        <li><a style="color: #fff;">Zondag gesloten</a></li>
-                    </ul>
+                    <li>
+                        <a style="color: #fff;">Ma - Vr: 09:00 - 18:00</a>
+                    </li>
+                    <li>
+                        <a style="color: #fff;">zaterdag: 10:00 - 16:00</a>
+                    </li>
+                    <li>
+                        <a style="color: #fff;">Zondag gesloten</a>
+                    </li>
+                </ul>
             </div>
 
             <!-- COLUMN 4 -->
             <div class="column-width-four" style="text-align: center;">
-                    <p class="sub-title-white" style="margin-bottom: 25px;">Adres</p>
-                    <ul>
-                        <li style="color: #fff;">Leuvensesteenweg 445</li>
-                        <li style="color: #fff;">3370 Boutersem</li>
-                    </ul>
-                </div>
-            
+                <p class="sub-title-white" style="margin-bottom: 25px;">Adres</p>
+                <ul>
+                    <li style="color: #fff;">Leuvensesteenweg 445</li>
+                    <li style="color: #fff;">3370 Boutersem</li>
+                </ul>
+            </div>
+
         </div>
     </div>
 
@@ -436,27 +501,27 @@
     <div class="row" style="margin-top: 0px;">
         <div id="map" style="width: 100%; height: 600px; padding-left: 300px;"></div>
     </div>
-    
+
     <!-- CONTACT FORM SECTION -->
     <div class="row padding block" id="contact">
-    	<div class="container">
-        	<h1 style="margin-bottom: 50px; text-align: center;">Neem contact op</h1>
+        <div class="container">
+            <h1 style="margin-bottom: 50px; text-align: center;">Neem contact op</h1>
             <form action="http://stevensempels.be/public/contact-form.php" method="POST">
                 <!-- FIRST NAME -->
                 <div class="form-row-width-two">
-                    <input type="text" name="fname" id="fname" class="input" placeholder="Voornaam"/>
+                    <input type="text" name="fname" id="fname" class="input" placeholder="Voornaam" />
                 </div>
                 <!-- LAST NAME -->
                 <div class="form-row-width-two">
-                    <input type="text" name="lname" id="lname"  class="input" placeholder="Achternaam"/>
+                    <input type="text" name="lname" id="lname" class="input" placeholder="Achternaam" />
                 </div>
                 <!-- PHONE -->
                 <div class="form-row-width-two">
-                    <input type="text" name="phone" id="phone"  class="input" placeholder="Telefoon"/>
+                    <input type="text" name="phone" id="phone" class="input" placeholder="Telefoon" />
                 </div>
                 <!-- EMAIL -->
                 <div class="form-row-width-two">
-                    <input type="text" name="email" id="email" class="input" placeholder="Email"/>
+                    <input type="text" name="email" id="email" class="input" placeholder="Email" />
                 </div>
                 <!-- MESSAGE -->
                 <div class="form-row-width-one">
@@ -464,20 +529,20 @@
                 </div>
                 <!-- SUBMIT BUTTON -->
                 <div class="row" style="text-align: center;">
-                    <input type="submit" name="submit" class="submit-button" value="Verzenden"/>
+                    <input type="submit" name="submit" class="submit-button" value="Verzenden" />
                 </div>
             </form>
         </div>
     </div>
-    
-    
+
+
 
     <!-- SCRIPTS -->
     <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
-	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
     <script type="text/javascript" src="js/onyx-scripts.js"></script>
 
 </body>
