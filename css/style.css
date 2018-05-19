@@ -106,7 +106,7 @@ h1 { /* Title Black */
 	
 h2 { /* Title White */
 	font-family: 'Montserrat-Bold';
-	font-size: 2.5em;
+	font-size: 2em;
 	font-weight: normal;
 	color: #fff;
 	margin: 0;
@@ -616,7 +616,7 @@ ul.drop-down li a:hover {
 
 .slider-full-width {
 	width: auto;
-	height: 900px;
+	height: 100vh;
 	overflow: hidden;
 	}
 	
@@ -1304,7 +1304,7 @@ input[type="submit"]:hover, .btn-contact:hover {
 		}
 		
 	.sidebar-slider-full-width {
-		height: 900px;
+		height: 100vh;
 		margin-top: 60px;
 		}
 		
@@ -1615,14 +1615,14 @@ input[type="submit"]:hover, .btn-contact:hover {
 		margin-top: 0px;
 	}
 	.sidebar-slider-full-width.slide-1 {
-		background: url(../img/otw-slider/creative/project-1/slide-2.jpg) no-repeat center;
+		background: url(../img/otw-slider/creative/project-1/slide-1.jpg) no-repeat center;
 		background-size: cover; 
 		-webkit-background-size: cover; 
 		-moz-background-size: cover; 
 		-o-background-size: cover;
 	}
 	.sidebar-slider-full-width.slide-2 {
-		background: url(../img/otw-slider/creative/project-1/slide-1.jpg) no-repeat center;
+		background: url(../img/otw-slider/creative/project-1/slide-2.jpg) no-repeat center;
 		background-size: cover; 
 		-webkit-background-size: cover; 
 		-moz-background-size: cover; 
@@ -1632,14 +1632,14 @@ input[type="submit"]:hover, .btn-contact:hover {
 }
 @media screen and (max-width:668px) {
 	.sidebar-slider-full-width.slide-1 {
-		background: url(../img/otw-slider/creative/project-1/slide-2_mobile.jpg) no-repeat center;
+		background: url(../img/otw-slider/creative/project-1/slide-1.jpg) no-repeat center;
 		background-size: cover; 
 		-webkit-background-size: cover; 
 		-moz-background-size: cover; 
 		-o-background-size: cover;
 	}
 	.sidebar-slider-full-width.slide-2 {
-		background: url(../img/otw-slider/creative/project-1/slide-1.jpg) no-repeat center;
+		background: url(../img/otw-slider/creative/project-1/slide-2.jpg) no-repeat center;
 		background-size: cover; 
 		-webkit-background-size: cover; 
 		-moz-background-size: cover; 
