@@ -1545,9 +1545,6 @@ input[type="submit"]:hover, .btn-contact:hover {
 }
 
 .brands-slider {
-	background-color: rgba(17,17,17,0.9);
-	border-top: 1px solid rgb(255, 156, 0);
-	border-bottom: 1px solid rgb(255, 156, 0);
 	padding: 10px 0;
 	white-space: nowrap;
 	height: 121px;
@@ -1604,6 +1601,13 @@ input[type="submit"]:hover, .btn-contact:hover {
 	left: 10px;
 	z-index: 98;
 	background-color: rgba(200,200,200,0.5);
+}
+.slider-wrapper {
+	margin-top: -171px;
+	overflow: hidden;
+	background-color: rgba(17,17,17,0.9);
+	border-top: 1px solid rgb(255, 156, 0);
+	border-bottom: 1px solid rgb(255, 156, 0);
 }
 
 @media screen and (max-width:1200px) {
