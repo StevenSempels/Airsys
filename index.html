@@ -61,7 +61,7 @@
                 styles: [{ "featureType": "all", "elementType": "all", "stylers": [{ "hue": "#ff0000" }, { "saturation": -100 }, { "lightness": -30 }] }, { "featureType": "all", "elementType": "labels.text.fill", "stylers": [{ "color": "#ffffff" }] }, { "featureType": "all", "elementType": "labels.text.stroke", "stylers": [{ "color": "#353535" }] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [{ "color": "#656565" }] }, { "featureType": "poi", "elementType": "geometry.fill", "stylers": [{ "color": "#505050" }] }, { "featureType": "poi", "elementType": "geometry.stroke", "stylers": [{ "color": "#808080" }] }, { "featureType": "road", "elementType": "geometry", "stylers": [{ "color": "#454545" }] }]
             };
 
-            // Get the ID of the HTML DOM element that will contain your map 
+            // Get the ID of the HTML DOM element that will contain your map
             var mapElement = document.getElementById('map');
             // Create the Google Map using our element and options defined above
             var map = new google.maps.Map(mapElement, mapOptions);
@@ -273,6 +273,13 @@
                 </div>
                 <div class="sidebar-slider-full-width brands">
                     <div class="brand-item">
+                        <a target="_blank" href="http://www.e-julkaisu.fi/sievi/2020-nl/mobile.html">
+                            <img src="./img/brands/sievi.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="sidebar-slider-full-width brands">
+                    <div class="brand-item">
                         <a target="_blank" href="./img/brands/cat_2018.pdf">
                             <img src="./img/brands/cat.jpg">
                         </a>
@@ -374,17 +381,17 @@
     <!-- <div class="row padding block" id="brands" style="background-color: #111111">
     	<div class="container"></div>
         <h2 style="color:#FCB515; text-align: center; display: block; margin-bottom: 15px">Merken</h2>
-               
+
         <div class="otw_portfolio_manager-slider" data-animation="slide" style="max-height: 400px;">
-                
+
                 <ul class="slides">
-                    
+
                     <li class="sidebar-slider-full-width" style="height: 400px; background: url(./img/brands/snickers.jpg) no-repeat center"></li>
-                    
+
                     <li class="sidebar-slider-full-width" style="height: 400px; background: url(./img/brands/cat.jpg) no-repeat center"></li>
-               
+
                     <li class="sidebar-slider-full-width" style="height: 400px; background: url(./img/brands/herock.jpg) no-repeat center"></li>
-                
+
                     <li class="sidebar-slider-full-width" style="height: 400px; background: url(./img/brands/diadora.jpg) no-repeat center"></li>
                 </ul>
             </div>
